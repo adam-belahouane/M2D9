@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+IMPORTANT:
+Start from the previous Musical assignment project you've created on M2-D2
+    
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Most of the requirements in this exercises reference a bootstrap's functionality or component. 
+Make sure you check the documentation before creting anything custom.
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+ <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page.
+        -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#favourite-albums">favourite<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#album-reviews">album reviews</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </div>
+    
+        <!-- EXERCISE 3
+                Create a responsive section for your favourite albums.
+                In this section you should have:
+                - 4 albums per row when the screen is very large
+                - 3 albums per row when you are on a tablet (or a smaller viewport)
+                - 2 albums per row when you are on a small screen
+            -->
+            <div class="container" id="favourite-albums">
+                <div class="row">
+                    <div class="col col-4"></div>
+                    <div class="col col-4"><h1>favourite albums</h1></div>
+                    <div class="col col-4"></div>
+                </div>
+                
+            <div class="row">
+               
+        <div class="col-6 col-sm-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Dave_Psychodrama.jpeg/220px-Dave_Psychodrama.jpeg" class="card-img-top img-fluid" alt="...">
+            <div class="music-g"><P>Rap</P></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Ready_To_Die.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="music-g"><P>Rap</P></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/27/IllmaticNas.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="music-g"><P>Rap</P></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-3"><div class="card" >
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Konnichiwa_by_Skepta_cover.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="music-g"><P>Rap</P></div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+        
+    
+        <!-- EXERCISE 4
+                Create a section for the album reviews.
+                Pick one of your favourite albums, and create a section with:
+                - Cover
+                - Title
+                - Band
+                - Duration
+                - Genre
+                - Tracklist
+                - ... And whatever you think it's interesting about it!
+            -->
+            <section class="container" id="album-reviews">
+                    <div class="row">
+                        <div class="col col-4"></div>
+                        <div class="col col-4"><h1>album reviews</h1></div>
+                        <div class="col col-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 col-md-1"></div>
+                        <div class="col-4 col-md-4"><img  class="img-fluid" src="https://upload.wikimedia.org/wikipedia/en/2/27/IllmaticNas.jpg" alt=""></div>
+                        <div class="col-4 col-md-1"></div>
+                        <div class="col-12 col-md-6"> <p>Title: Illmatic<br>Artist: Nas<br>Duration: 39:51<br>Genre: East Coast hip hop jazz rap hardcore hip hop<br>Tracklist:<ol>
+                            <li>The Genesis</li>
+                            <li>N.Y State of Mind</li>
+                            <li>Life's a Bitch</li>
+                            <li>The World Is Yours</li>
+                            <li>Halftime</li>
+                            <li>Memory Lane</li>
+                            <li>One Love</li>
+                            <li>One Time 4 Your Mind</li>
+                            <li>Represent</li>
+                            <li>It Aint't Hard To Tell</li>
+                        </ol></p>
+                     </div>
+                    </div>
+            </section>
+            <footer class="container" id="footer">
+    
+            </footer>
+    
+        <!-- EXERCISE 5
+                Worst album list! Choose the albums you dislike or some you think are overrated and list it
+                in this "hall of shame" chart! 
+            -->
+    
+        <!-- EXERCISE 6
+                Do you have any musician / band you admire or you are a fan of?
+                This section is dedicated to him / her / them!
+                Feel free to experiment in this part of the page.
+            -->
+    
+        <!-- EXERCISE 7
+                Just covers!
+                Create a tapestry of album pictures. Every album picture must be "squared" (use CSS to achieve that).
+                Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
+            -->
+    
+        <!-- EXERCISE 8
+                Implement a footer with some information / social links.
+            -->
+    
+        <!-- ############ EXTRA:
+            EXERCISE 9
+                Create an album details area which will be toggled on and off by clicking on the album image.
+            -->
+    
+        <!-- EXERCISE 10
+                Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
+                (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+            -->
+    
+        <!--
+             EXERCISE 11
+                Add in the footer a field that counts, on page load, how many ALBUMS are present on the page.
+            -->
+    
+            </div>
+           
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+    
+
+    <!-- EXERCISE 2
+        Use a Bootstrap Card to contain every album in the favorite list you previously created.
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
+    -->
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
+    -->
+
+    <!-- EXERCISE 4
+        Create a new section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+    <h2 style="text-align: center;">album tracklist</h2>
+    <div class="album-tracklist">
+        
+        <table class="table ">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Track duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>The Genesis</td>
+                <td>Otto</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>N.Y State of Mind</td>
+                <td>Thornton</td>
+ 
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Life's a Bitch</td>
+                <td>the Bird</td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)  
+
+        ## EXTRA CSS CHALLENGE ##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when its hovered (with the box-shadow property) 
+        to look like as if the button was elevating itself.
+    -->
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal + button example)
+        
+        The modal shall contain single input fields (avoid using a <form> to wrap the inputs) with:
+        - Track number
+        - Track title
+        - Track duration
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+
+    <!-- EXERCISE 9
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+
+    <!-- EXERCISE 10
+        Considering the "Add Track" functionality that you've created on ex. 8: 
+         - The new list-element added to the list should appear with a fade-in effect
+     -->
+
+    <!-- EXERCISE 11
+        Considering the button you've created in ex. 5 that deletes the row:
+        Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

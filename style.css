@@ -1,0 +1,25 @@
+p,ol,li{
+    text-align: center;
+    list-style-type: none;
+}
+@keyframes test {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.jumbotron{
+    animation-name: test;
+    animation-duration: 4s;
+}
+.music-g{
+    background-color:lightblue;
+    padding: 0 10px 0 10px;
+    height: 25px;
+    position: absolute;
+    font-size: small;
+}
+.album-tracklist{
+    display: flex;
+    
+    
+    
+}
